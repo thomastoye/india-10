@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mdi/mdi.dart';
 
 import 'models/team.dart';
 import 'widgets/crew-list.dart';
@@ -34,12 +33,12 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
   static final List<Team> teams = [
-    Team(name: "India 10", icon: Mdi.bagPersonal),
-    Team(name: "India 20", icon: Mdi.bagPersonal),
-    Team(name: "Zulu 10", icon: Mdi.ambulance),
-    Team(name: "Juliet 10", icon: Mdi.runFast),
-    Team(name: "Hulppost", icon: Mdi.hospitalBox),
-    Team(name: "CP-OPS", icon: Mdi.towerFire),
+    Team(name: "India 10", type: TeamType.intervention),
+    Team(name: "India 20", type: TeamType.intervention),
+    Team(name: "Zulu 10", type: TeamType.intervention),
+    Team(name: "Juliet 10", type: TeamType.jump),
+    Team(name: "Hulppost", type: TeamType.aidStation),
+    Team(name: "CP-OPS", type: TeamType.cp),
   ];
 
   static final List<Crew> crewList = [

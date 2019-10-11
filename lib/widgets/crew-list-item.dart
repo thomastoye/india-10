@@ -17,7 +17,7 @@ class CrewListItem extends StatelessWidget {
         child: ListTile(
           leading: CircleAvatar(
             radius: 30,
-            child: Icon(crewMember.team.icon),
+            child: Icon(crewMember.team.type.icon),
           ),
           title: Text("${crewMember.team.name} - ${crewMember.name}",
               style: Theme.of(context).textTheme.title),
